@@ -1,0 +1,123 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Report Form</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="icon" href="https://assets.codementor.io/icons/apple-touch-icon-60x60.png">
+        <link href="{% static 'flipclock.css' %}" rel="stylesheet" />
+        <link href="{% static 'form.css' %}" rel="stylesheet" />
+        <script src="{% static 'form.js' %}"></script>
+        <script src="{% static 'flipclock.min.js' %}"></script>
+        <style>
+            .loader {
+              border: 4px solid #f3f3f3;
+              border-radius: 50%;
+              border-top: 4px solid #3498db;
+              width: 40px;
+              height: 40px;
+              margin-bottom: 10px;
+              -webkit-animation: spin 2s linear infinite; /* Safari */
+              animation: spin 2s linear infinite;
+              display: none;
+            }
+
+            /* Safari */
+            @-webkit-keyframes spin {
+              0% { -webkit-transform: rotate(0deg); }
+              100% { -webkit-transform: rotate(360deg); }`
+            }
+
+            @keyframes spin {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="mainbody">
+            <div id="form-main">
+                <div id="form-div">
+                    <!--<div class="clock"></div>-->
+                    <div class="loader"></div>
+                    <form class="montform" id="reused_form" name = "reused_form">{% csrf_token %} <!--onsubmit="return validateForm()" -->
+                        <p class="name">
+                            <input name="name" type="text" class="feedback-input" required placeholder="Company Name*" id="name" />
+                        </p>
+                        
+                        <p class="url">
+                            <input name="url" type="url" class="feedback-input" required placeholder="URL" id="url" />
+                        </p>
+
+                        <p class="address">
+                            <input name="address" type="text" class="feedback-input" required placeholder="Street Address" id="address" />
+                        </p>
+
+                        <p class="city">
+                            <input name="city" type="text" class="feedback-input" required placeholder="City" id="city" />
+                        </p>
+
+                        <p class="state">
+                            <input name="state" type="text" class="feedback-input" required placeholder="State" id="state" />
+                        </p>
+
+                        <p class="zipcode">
+                            <input name="zipcode" type="text" pattern="[0-9]{5,6}" class="feedback-input" required placeholder="Zipcode" id="zipcode" />
+                        </p>
+
+                        <p class="telephone">
+                            <input name="telephone" type="tel" class="feedback-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="949-364-2033" id="telephone" required/>
+                        </p>
+
+                        <div class="submit">
+                            <button type="submit" class="button-blue">SUBMIT</button>
+                            <div class="ease"></div>
+                        </div>
+                    </form>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h4>
+                            Error
+                        </h4>
+                        Sorry there was an error sending your form.
+                    </div>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h2>Success! Your Message was Sent Successfully.</h2> </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var clock = $('.clock').FlipClock(0, {
+                countdown: true,
+                clockFace: 'MinuteCounter'
+            });
+
+            /*
+            function validateForm()
+            {
+                var a = document.forms["reused_form"]["name"].value;
+                var b = document.forms["reused_form"]["url"].value;
+                var c = document.forms["reused_form"]["address"].value;
+                var d = document.forms["reused_form"]["city"].value;
+                var e = document.forms["reused_form"]["state"].value;
+                var f = document.forms["reused_form"]["zipcode"].value;
+                var g = document.forms["reused_form"]["telephone"].value;
+                if (a==null || a=="",b==null || b=="",c==null || c=="",d==null || d=="",e==null || e=="",f==null || f=="",g==null || g=="")
+                {
+                    alert("Please Fill All Required Field");
+                    return false;
+                }
+                else
+                {
+                    var clock = $('.clock').FlipClock(480, {
+                    countdown: true,
+                    clockFace: 'MinuteCounter'
+                    });
+                }
+            }
+            */
+        </script>
+    </body>
+</html>

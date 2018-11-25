@@ -1,0 +1,170 @@
+2018-11-25 16:45:45 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: scrapy_app)
+2018-11-25 16:45:45 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.4.1, Platform Windows-10-10.0.10240-SP0
+2018-11-25 16:45:45 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs\\scrapy_app\\autoreport\\671314e8f0b811e889ef1c1b0d9ebf55.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders']}
+2018-11-25 16:45:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-11-25 16:45:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-11-25 16:45:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-11-25 16:45:45 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-11-25 16:45:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--disable-gpu"]}}}
+2018-11-25 16:45:45 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:59911
+2018-11-25 16:45:47 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session HTTP/1.1" 200 889
+2018-11-25 16:45:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:45:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/window/current/size {"width": 1920, "height": 1680, "windowHandle": "current", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:45:48 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/window/current/size HTTP/1.1" 200 72
+2018-11-25 16:45:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:45:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/timeouts {"pageLoad": 30000, "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:45:48 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/timeouts HTTP/1.1" 200 301
+2018-11-25 16:45:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:45:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/timeouts {"ms": 30000.0, "type": "page load", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:45:48 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/timeouts HTTP/1.1" 200 72
+2018-11-25 16:45:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:45:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/window/current/maximize {"windowHandle": "current", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:45:48 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/window/current/maximize HTTP/1.1" 200 110
+2018-11-25 16:45:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:45:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/url {"url": "https://developers.google.com/speed/pagespeed/insights/?url=http://ojedashowerpans.com/&tab=mobile", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:04 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/url HTTP/1.1" 200 72
+2018-11-25 16:46:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:05 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "//*[@id=\"page-speed-insights\"]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div/a/div[1]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:05 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 104
+2018-11-25 16:46:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:05 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/element/0.2777374596858275-1/text {"id": "0.2777374596858275-1", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:05 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "GET /session/58ff4ae89a07c7c3cf930189132e5d2b/element/0.2777374596858275-1/text HTTP/1.1" 200 72
+2018-11-25 16:46:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:05 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/screenshot {"sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:05 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "GET /session/58ff4ae89a07c7c3cf930189132e5d2b/screenshot HTTP/1.1" 200 414930
+2018-11-25 16:46:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:05 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/url {"url": "https://developers.google.com/speed/pagespeed/insights/?url=http://ojedashowerpans.com/&tab=desktop", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:06 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/url HTTP/1.1" 200 72
+2018-11-25 16:46:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "//*[@id=\"page-speed-insights\"]/div[2]/div[2]/div[2]/div[2]/div[1]/div[1]/div/a/div[1]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:07 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 104
+2018-11-25 16:46:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:07 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/element/0.2746672199024418-1/text {"id": "0.2746672199024418-1", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:07 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "GET /session/58ff4ae89a07c7c3cf930189132e5d2b/element/0.2746672199024418-1/text HTTP/1.1" 200 72
+2018-11-25 16:46:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:07 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/screenshot {"sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:07 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "GET /session/58ff4ae89a07c7c3cf930189132e5d2b/screenshot HTTP/1.1" 200 208894
+2018-11-25 16:46:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/url {"url": "https://tools.pingdom.com/", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:13 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/url HTTP/1.1" 200 72
+2018-11-25 16:46:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:13 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/element {"using": "id", "value": "urlInput", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:13 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/element HTTP/1.1" 200 102
+2018-11-25 16:46:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:13 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/element/0.8387311906658197-1/value {"text": "http://ojedashowerpans.com/", "value": ["h", "t", "t", "p", ":", "/", "/", "o", "j", "e", "d", "a", "s", "h", "o", "w", "e", "r", "p", "a", "n", "s", ".", "c", "o", "m", "/"], "id": "0.8387311906658197-1", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:13 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/element/0.8387311906658197-1/value HTTP/1.1" 200 72
+2018-11-25 16:46:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:13 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-home-hero/header/section/app-test-runner/div/div[2]/div[3]/input", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:13 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 104
+2018-11-25 16:46:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:13 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/element/0.8387311906658197-2/click {"id": "0.8387311906658197-2", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:18 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/element/0.8387311906658197-2/click HTTP/1.1" 200 72
+2018-11-25 16:46:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:19 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:19 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:19 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:20 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:20 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:21 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:21 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:22 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:22 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:22 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:23 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:24 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:24 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:24 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:25 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:25 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:25 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:26 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:28 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:29 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:29 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:29 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:30 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:31 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:31 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:31 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:32 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:32 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:33 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:33 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:33 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:34 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:34 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:35 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:35 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:36 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:36 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:37 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:37 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:37 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:38 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 70
+2018-11-25 16:46:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:39 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[1]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:39 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 104
+2018-11-25 16:46:39 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:39 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/element/0.8387311906658197-3/text {"id": "0.8387311906658197-3", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:39 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "GET /session/58ff4ae89a07c7c3cf930189132e5d2b/element/0.8387311906658197-3/text HTTP/1.1" 200 72
+2018-11-25 16:46:39 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59911/session/58ff4ae89a07c7c3cf930189132e5d2b/elements {"using": "xpath", "value": "/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[2]/app-metric/div[2]", "sessionId": "58ff4ae89a07c7c3cf930189132e5d2b"}
+2018-11-25 16:46:55 [urllib3.connectionpool] DEBUG: http://127.0.0.1:59911 "POST /session/58ff4ae89a07c7c3cf930189132e5d2b/elements HTTP/1.1" 200 268
+2018-11-25 16:46:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-11-25 16:46:55 [twisted] CRITICAL: Unhandled error in Deferred:
+2018-11-25 16:46:55 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "c:\users\homepc\appdata\local\programs\python\python36-32\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "c:\users\homepc\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+  File "D:\WorkingDirectory\Automation(Craig)\heroku\scrapy_app\scrapy_app\spiders\autoreport.py", line 130, in start_requests
+    pingsize = browser.find_elements_by_xpath('/html/body/app-root/main/app-report/section[1]/app-summary/div/div/app-summary-player/div/div[2]/div/div[2]/app-metric/div[2]')[0].text
+  File "c:\users\homepc\appdata\local\programs\python\python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 410, in find_elements_by_xpath
+    return self.find_elements(by=By.XPATH, value=xpath)
+  File "c:\users\homepc\appdata\local\programs\python\python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "c:\users\homepc\appdata\local\programs\python\python36-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\homepc\appdata\local\programs\python\python36-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.10240 x86_64)
+
